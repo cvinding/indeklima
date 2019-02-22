@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
-    $("#main-navbar > div > ul > li > a[href^='#']").on('click', function(e) {
+    const baseURL = "http://api.indeklima.local:8080";
+
+    $("#main-navbar > div > .scrollspy-enabled > li > a[href^='#'], #main-navbar > a[href^='#']").on('click', function(e) {
         // prevent default anchor click behavior
         e.preventDefault();
 
@@ -12,6 +14,31 @@ $(document).ready(function () {
             // (default click behaviour)
             window.location.hash = hash;
         });
+
+    });
+
+    $("#submit-login").click(function (e) {
+        e.preventDefault();
+
+        const form = $($($(this).parent()).parent("form"));
+
+
+        $.ajax({
+
+            type: "POST",
+
+            url: baseURL + "/api/auth/authorize",
+
+            data: form.serialize(),
+
+            success: function(result){
+                console.log(result.token);
+
+            }
+
+        })
+
+
 
     });
 

@@ -1,3 +1,15 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 #main-navbar {
     background-color: #009CE2;
+}
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
