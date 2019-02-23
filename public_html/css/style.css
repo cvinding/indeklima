@@ -3,6 +3,7 @@ body {
     margin: 0;
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: #009CE2;/*e9ecef*/
 }
 
 #main-navbar, #admin-navbar {
@@ -17,4 +18,9 @@ body {
 #btn-grid > div > div > a {
     width: 100%;
     height: 50px;
+}
+
+#room-information-modal > div > div > .modal-body > ul {
+    list-style: none;
+    padding: 0;
 }

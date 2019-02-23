@@ -43,6 +43,7 @@ $(document).ready(function () {
             success: function(result){
                 login(form.find("input[name=username-input]")[0].value, result, function (callback, type) {
                     uiBox.html(createDismissibleMessage((type) ? "success" : "danger", (type) ? "Succes!" : "Fejl!", callback));
+
                 });
             },
             error: function (result) {
@@ -80,7 +81,7 @@ $(document).ready(function () {
 
         setTimeout(function () {
             window.location = webURL() + "/admin";
-        }, 1500);
+        }, 2000);
 
         output("Du er ved at blive logged ind", true);
         return true;

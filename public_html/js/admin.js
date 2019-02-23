@@ -3,6 +3,7 @@ $(document).ready(function () {
     /**
      * checkLogin() is used for checking if the cookies set is correct and the token is valid
      */
+
     checkLogin();
 
     setInterval(function () {
@@ -46,6 +47,11 @@ $(document).ready(function () {
         })
 
     }
+
+    $("#username").ready(function () {
+        $("#username").html(getCookie("username"));
+    })
+
 
     /**
      * If logout is clicked, log the user out
