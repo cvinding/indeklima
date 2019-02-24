@@ -52,11 +52,22 @@
                     <form method="POST">
                         <div class="row">
                             <div class="col-sm-3">
+                                &nbsp;;
+                            </div>
+                            <div class="col-sm-6">
+                                <div id="ui-box"></div>
+                            </div>
+                            <div class="col-sm-3">
+                                &nbsp;;
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
                                 &nbsp;
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="temperature-input">Standard temperatur</label>
+                                    <label for="temperature-input">Standard temperatur (påkrævet) (&#8451;)</label>
                                     <input type="number" class="form-control" min="15" max="30" step="0.5" name="temperature-input" id="temperature-input" placeholder="Standard temperatur" required="required">
                                 </div>
                             </div>
@@ -69,7 +80,7 @@
                                 &nbsp;
                             </div>
                             <div class="col-sm-3">
-                                <button class="btn btn-success" type="submit">Gem temperatur</button>
+                                <button id="save-new-default-temperature" class="btn btn-success" type="submit">Gem temperatur</button>
                             </div>
                             <div class="col-sm-6">
                                 &nbsp;
