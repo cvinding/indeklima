@@ -2,12 +2,12 @@ $(document).ready(function () {
 
     // The API url
     apiURL = function () {
-        return "http://api.indeklima.local:8080";
+        return "http://test.indeklima-api.local/";
     };
 
     // The web app url
     webURL = function () {
-        return "http://indeklima.local:8080";
+        return "http://web.indeklima.local";
     };
 
     /**
